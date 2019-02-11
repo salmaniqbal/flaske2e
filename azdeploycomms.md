@@ -8,7 +8,7 @@ az group create --name flasky --location "West Europe"
 az appservice plan create --name mflaske2eAppServicePlan --resource-group flasky --sku B1 --is-linux
 
 #### Create WebApp for Container
-az webapp create --name flaske2e --resource-group flasky --plan myAppServicePlan --deployment-container-image-name salmaniqbal/flaske2e
+az webapp create --name flaske2e --resource-group flasky --plan mflaske2eAppServicePlan --deployment-container-image-name salmaniqbal/flaske2e
 
 #### Expose port externally
 az webapp config appsettings set --resource-group flasky --name flaske2e --settings WEBSITES_PORT=5000
